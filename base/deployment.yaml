@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-ms
+  labels:
+    app: go-ms
+    backstage.io/kubernetes-id: go-ms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-ms
+  template:
+    metadata:
+      labels:
+        app: go-ms
+    spec:
+      containers:
+        - name: go-ms
+          image: ghcr.io/botopsy/go-ms:latest
+          ports:
+            - containerPort: 3000
