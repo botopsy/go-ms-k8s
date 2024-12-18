@@ -12,4 +12,4 @@ patches:
     path: ingress.yaml
 images:
   - name: ghcr.io/botopsy/go-ms
-    newTag: latest
+    newTag: fee1b5b
