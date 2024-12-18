@@ -4,7 +4,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: go-ms-ingress
-  namespace: go-ms
   labels:
     backstage.io/kubernetes-id: go-ms
 spec:
