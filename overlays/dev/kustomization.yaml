@@ -9,6 +9,8 @@ resources:
 secretGenerator:
   - name: dockerconfigjson-github-com
     type: "kubernetes.io/dockerconfigjson"
+    literals:
+      - .dockerconfigjson={}
     options:
       disableNameSuffixHash: true
       annotations:
